@@ -1,0 +1,120 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+
+body {
+  background-color: #393e46;
+}
+
+h1 {
+  margin: 20px;
+  /* margin-top: ; */
+  font-family: "Lobster", cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #4ecca3;
+}
+
+h2 {
+  margin: 30px;
+  font-family: "Lobster", cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 4rem;
+  color: #4ecca3;
+}
+
+h3 {
+  margin: 30px;
+  font-family: "Lobster", cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 2.5rem;
+  color: #4ecca3;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ecca3;
+  font-family: "Indie Flower", cursive;
+}
+
+.winner {
+  visibility: hidden;
+}
+
+img {
+  width: 80%;
+}
+
+.alert-container {
+  position: fixed;
+  width: 300px;
+  height: 80px;
+  background-color: yellow;
+  border-radius: 20px;
+  left: 20px;
+  top: 20px;
+
+  /* horizontal, vertikal, radius, color */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: red;
+  transition: 1s;
+
+  /* visibility: hidden; */
+}
+
+.active {
+  left: -320px;
+}
+
+.container_button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  justify-content: center;
+}
+
+.btn_roll {
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  width: 15%;
+  border-radius: 20px;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  background-color: #279ee8;
+  box-shadow: 1px 2px 3px;
+}
+
+.btn_play {
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  width: 15%;
+  border-radius: 20px;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  background-color: #32a852;
+  box-shadow: 1px 2px 3px;
+}
+
+footer {
+  margin-top: 1%;
+  color: #eeeeee;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  font-size: 2rem;
+}

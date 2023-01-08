@@ -1,0 +1,152 @@
+body {
+  text-align: center;
+  background-color: #283149;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #da0463;
+}
+
+footer {
+  color: #dbedf3;
+  font-family: sans-serif;
+}
+
+.a {
+  background-image: url("images/kick.png");
+}
+
+.s {
+  background-image: url("images/snare.png");
+}
+
+.j {
+  background-image: url("images/hi-hat.jpg");
+}
+
+.k {
+  background-image: url("images/crash.png");
+}
+
+.x {
+  background-image: url("images/tom1.png");
+}
+
+.c {
+  background-image: url("images/tom2.png");
+}
+
+.n {
+  background-image: url("images/tom3.png");
+}
+
+.m {
+  background-image: url("images/tom4.png");
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.note {
+  background-color: #fff;
+  color: black;
+  /* float: right; */
+  width: 33%;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  box-shadow: 1px 2px 7px #fff;
+  transition: 1s;
+}
+
+.fa-solid {
+  float: right;
+  margin-right: 1%;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  /* word-spacing: 10px; */
+}
+
+th {
+  text-align: center;
+  font-family: "Arvo", cursive;
+  text-shadow: 0px 0px 1px;
+  border-bottom: solid 1px black;
+  font-weight: bold;
+  background-color: #b5d1f5;
+  font-size: 1rem;
+  padding: 3px;
+}
+
+td {
+  /* border-bottom: solid 1px black; */
+  font-weight: 500;
+}
+
+.left_note {
+  /* background-color: red; */
+  font-family: "Arvo", cursive;
+}
+
+.right_note {
+  /* background-color: blue; */
+  font-family: "Arvo", cursive;
+}
+
+.btn_note {
+  width: auto;
+  height: auto;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-color: #5b92a3;
+  color: black;
+  font-family: "Arvo", cursive;
+  font-weight: bold;
+}
+
+.btn_note:hover {
+  background-color: #8ddbf2;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressedButton {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404b69;
+  font-size: 5rem;
+  font-family: "Arvo", cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #da0463;
+  text-shadow: 3px 0 #dbedf3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+.active {
+  left: -650px;
+}
