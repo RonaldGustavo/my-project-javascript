@@ -10,40 +10,35 @@ h1 {
   text-shadow: 3px 0 #da0463;
 }
 
-footer {
-  color: #dbedf3;
-  font-family: sans-serif;
-}
-
-.a {
+.kick {
   background-image: url("images/kick.png");
 }
 
-.s {
+.snare {
   background-image: url("images/snare.png");
 }
 
-.j {
+.hi-hat {
   background-image: url("images/hi-hat.jpg");
 }
 
-.k {
+.crash {
   background-image: url("images/crash.png");
 }
 
-.x {
+.tom1 {
   background-image: url("images/tom1.png");
 }
 
-.c {
+.tom2 {
   background-image: url("images/tom2.png");
 }
 
-.n {
+.tom3 {
   background-image: url("images/tom3.png");
 }
 
-.m {
+.tom4 {
   background-image: url("images/tom4.png");
 }
 
@@ -54,7 +49,6 @@ footer {
 .note {
   background-color: #fff;
   color: black;
-  /* float: right; */
   width: 33%;
   position: fixed;
   left: 20px;
@@ -71,7 +65,6 @@ footer {
 table {
   width: 100%;
   text-align: left;
-  /* word-spacing: 10px; */
 }
 
 th {
@@ -86,17 +79,14 @@ th {
 }
 
 td {
-  /* border-bottom: solid 1px black; */
   font-weight: 500;
 }
 
 .left_note {
-  /* background-color: red; */
   font-family: "Arvo", cursive;
 }
 
 .right_note {
-  /* background-color: blue; */
   font-family: "Arvo", cursive;
 }
 
@@ -115,18 +105,9 @@ td {
   background-color: #8ddbf2;
 }
 
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
-
 .pressedButton {
   box-shadow: 0 3px 4px 0 #dbedf3;
   opacity: 0.5;
-}
-
-.red {
-  color: red;
 }
 
 .drum {
@@ -149,4 +130,9 @@ td {
 
 .active {
   left: -650px;
+}
+
+footer {
+  color: #dbedf3;
+  font-family: sans-serif;
 }
