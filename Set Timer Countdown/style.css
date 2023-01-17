@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* buat jadi vertikal */
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+  background-color: cadetblue;
+  justify-content: center;
+  align-items: center;
+  /* menghilangkan scroll bar */
+  /* overflow: hidden; */
+  text-align: center;
+}
+
+h2 {
+  margin-top: -130px;
+  /* color: #fff; */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 3rem;
+}
+
+.year {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #fff;
+  margin-top: 20px;
+  letter-spacing: 5px;
+}
+
+.date_box {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: auto;
+  /* background-color: blue; */
+}
+
+.countdown {
+  margin: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown div {
+  margin: 0 15px;
+  margin-top: -25px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  width: 5%;
+  position: relative;
+  text-align: center;
+}
+
+.countdown div::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  font-size: 0.6rem;
+  line-height: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  width: 100%;
+  height: 35px;
+  /* display: flex; */
+}
+
+.countdown #day::before {
+  content: "Days";
+}
+.countdown #hour::before {
+  content: "Hours";
+}
+.countdown #minute::before {
+  content: "Minutes";
+}
+.countdown #second::before {
+  content: "Seconds";
+}
+
+.active {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.date {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.btn_reset {
+  width: 150px;
+  height: auto;
+  padding: 3px 15px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: chartreuse;
+}
+
+.btn_reset:hover {
+  background-color: aqua;
+}
+
+.btn_run {
+  width: 60px;
+  height: auto;
+  padding: 3px 15px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: chartreuse;
+}
+
+.btn_run:hover {
+  background-color: aqua;
+}
+
+.p_text {
+  font-weight: bold;
+}
