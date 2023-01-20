@@ -13,15 +13,23 @@ btnEl.addEventListener("click", () => {
 });
 
 copyIconEl.addEventListener("click", () => {
-  copyPassword();
 
-  // classlist = untuk setting element class
-  notificationCopied.classList.remove("active");
+  if (inputEl.value) {
+    copyPassword();
+    copyIconEl.disabled = false;
 
-  // untuk menghilangkan notifikasi
-  setTimeout(() => {
-    notificationCopied.classList.add("active");
-  }, 3000);
+    // classlist = untuk setting element class
+    notificationCopied.classList.remove("active");
+
+    // untuk menghilangkan notifikasi
+    setTimeout(() => {
+      notificationCopied.classList.add("active");
+    }, 3000);
+  } else {
+    copyIconEl.disabled = true
+
+  }
+
 });
 
 function createPassword() {
@@ -49,7 +57,7 @@ function copyPassword() {
   inputEl.select();
 
   // untuk select mobile
-  inputEl.setSelectionRange(0, 888);
+  inputEl.setSelectionRange(0, 50);
 
   // untuk copy text
   navigator.clipboard.writeText(inputEl.value);

@@ -56,6 +56,11 @@ h3 {
   cursor: pointer;
   opacity: 0.3;
   /* color: #495579; */
+  /* pointer-events: none;   */
+}
+
+.pointer-disabled {
+  pointer-events: none;
 }
 
 .fa-copy:hover {
@@ -104,5 +109,5 @@ h3 {
 }
 
 .active.alert-container {
-  left: -300px;
+  left: -310px;
 }
