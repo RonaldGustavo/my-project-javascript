@@ -9,7 +9,7 @@ body {
 
 .feedback-container {
   width: 400px;
-  height: 200px;
+  height: 220px;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -38,7 +38,23 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 20%;
+  bottom: 32%;
+}
+
+.btn-submit {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  width: 100px;
+  height: auto;
+  padding: 5px;
+  background-color: aquamarine;
+  /* margin-top: 10px; */
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px rgba(0 ,0,0,0.5);
+  cursor: pointer;
 }
 
 .fa-star {
