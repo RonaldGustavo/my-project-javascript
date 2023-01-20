@@ -30,7 +30,7 @@ function updateRating(index) {
 }
 
 btnSubmit.addEventListener("click", () => {
-    alert("Thank Your for Submit")
+    alert("Your Rating Have been Submited!")
     location.reload();
 
 })
