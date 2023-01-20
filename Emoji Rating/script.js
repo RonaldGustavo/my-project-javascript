@@ -4,10 +4,14 @@ const emojisEl = document.querySelectorAll(".fa-regular");
 
 const btnSubmit = document.querySelector(".btn-submit")
 
-starEl.forEach((starEl, index) => {
-    starEl.addEventListener("click", () => {
+const colorArray = ["red", "orange", "lightblue", "lightgreen", "green"]
+
+updateRating(0);
+
+starEl.forEach((starElParameter, index) => {
+    starElParameter.addEventListener("click", () => {
         updateRating(index);
-        
+
     });
 });
 
@@ -21,12 +25,13 @@ function updateRating(index) {
     });
     emojisEl.forEach((emojiEl) => {
         emojiEl.style.transform = "translateX(" + index * -50 + "px)";
+        emojiEl.style.color = colorArray[index]
     });
 }
 
-btnSubmit.addEventListener("click", ()=> {
-            alert("Thank Your for Submit")
-            location.reload();
-    
+btnSubmit.addEventListener("click", () => {
+    alert("Thank Your for Submit")
+    location.reload();
+
 })
 

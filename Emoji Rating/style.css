@@ -1,13 +1,36 @@
 body {
   margin: 0;
   height: 100vh;
-  display: flex;
+  /* display: flex; */
   background-color: yellow;
   align-items: center;
   justify-content: center;
 }
 
+h2 {
+  position: relative;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  top: 25%;
+  font-weight: bolder;
+  font-size: 2.2rem;
+  /* left: 50%; */
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+}
+
 .feedback-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 400px;
   height: 220px;
   background-color: white;
@@ -32,6 +55,7 @@ body {
 .fa-regular {
   margin: 1px;
   transform: translateX(0);
+  transition: transform 0.2s;
 }
 
 .rating-container {
@@ -44,16 +68,18 @@ body {
 .btn-submit {
   position: absolute;
   left: 50%;
+  margin-bottom: 5px;
   transform: translateX(-50%);
   bottom: 10px;
   width: 100px;
   height: auto;
   padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
   background-color: aquamarine;
-  /* margin-top: 10px; */
   border: none;
   border-radius: 10px;
-  box-shadow: 1px 3px 5px rgba(0 ,0,0,0.5);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
@@ -64,4 +90,16 @@ body {
 
 .fa-star.active {
   color: gold;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  bottom: 25%;
+  font-weight: 500;
+  font-size: 1rem;
+  /* left: 50%; */
+  align-items: center;
+  justify-content: center;
 }
