@@ -31,7 +31,7 @@ function Home(props) {
 
         <div className='row m-auto container-box'>
           {posts.map((post) => (
-            <div className="card text-bg-primary col-5 " key={post.title} >
+            <div className="card text-bg-primary col-5 " key={post.id} >
               <div className="card-header m-auto"><b>Title: </b> {post.title}</div>
               <div className="card-body">
                 <h5 className="card-title"><b>Id:</b> {post.id}</h5>
