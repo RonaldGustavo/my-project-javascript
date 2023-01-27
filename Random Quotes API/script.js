@@ -12,8 +12,11 @@ async function getQuote() {
         btnEl.disabled = true
         quoteEl.innerText = "Loading data"
         authorEl.innerText = "Loading data"
+
+        // get data
         const response = await fetch(apiURL)
         const data = await response.json()
+
         const quoteContent = data.content;
         const quoteAuthor = data.author;
         quoteEl.innerText = quoteContent
