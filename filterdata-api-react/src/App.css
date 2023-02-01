@@ -1,0 +1,38 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, lightblue, lightgreen);
+}
+
+.container {
+  width: 50%;
+  text-align: center;
+  background-color: cadetblue;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.btn-submit {
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: aquamarine;
+  border: none;
+}
+
+.btn-submit:hover {
+  background-color: aqua;
+}
+
+.btn-submit:disabled {
+  cursor: not-allowed;
+}
+
+#value-text {
+  font-size: 1rem;
+  font-weight: 500;
+  /* visibility: hidden; */
+}
