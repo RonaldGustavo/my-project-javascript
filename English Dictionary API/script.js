@@ -47,7 +47,7 @@ async function fetchAPI(word) {
 
             audioEl.style.display = "inline-flex"
 
-            // menampilkan result wor d
+            // menampilkan result word
             titleEl.innerText = result[0].word
 
             // get data api

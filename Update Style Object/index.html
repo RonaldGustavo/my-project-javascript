@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Style Object</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <p class="card-text">Change Style/Content this Object</p>
+      </div>
+      <select name="select-style" class="select-style">
+        <option selected disabled>choose style</option>
+        <option>Font Size</option>
+        <option>Background</option>
+        <option>Text Color</option>
+        <option>Padding</option>
+      </select>
+      <input type="text" placeholder="input Value" class="input-value" />
+      <button class="btn-update">Update</button>
+      <button class="btn-reset" onclick="handleReset()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
