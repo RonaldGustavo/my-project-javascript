@@ -1,0 +1,108 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  background-color: bisque;
+  width: 100%;
+  height: 100vh;
+}
+
+.flex_container {
+}
+
+.header {
+  background-color: red;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logo {
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.time {
+  font-size: 1rem;
+}
+
+.main-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+}
+
+.nav {
+  width: 20%;
+  height: auto;
+  background-color: blue;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+  background-color: aqua;
+  padding: 5px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+li:hover {
+  background-color: azure;
+}
+
+.active {
+  background-color: azure;
+}
+
+.main1 {
+  width: 80%;
+  background-color: purple;
+  padding-right: 10px;
+}
+
+.main2 {
+  width: 80%;
+  background-color: cadetblue;
+  padding-right: 10px;
+}
+.main3 {
+  width: 80%;
+  background-color: chocolate;
+  padding-right: 10px;
+}
+.main4 {
+  width: 80%;
+  background-color: blanchedalmond;
+  padding-right: 10px;
+}
+.main5 {
+  width: 80%;
+  background-color: purple;
+  padding-right: 10px;
+}
+.footer {
+  width: 100%;
+  height: 10vh;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
