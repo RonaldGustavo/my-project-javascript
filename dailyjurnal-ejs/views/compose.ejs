@@ -1,0 +1,18 @@
+<!-- header component -->
+<%- include partials/header.ejs -%>
+    <div class="container">
+
+        <h1 class="heading">Add Content</h1>
+        <form action="/compose" class="" method="post">
+            <div class="form-group">
+                <label for="">Title</label>
+                <input type="text" name="postTitle" class="form-control" />
+                <label for="">Post</label>
+                <textarea name="postBody" class="form-control" id="" cols="30" rows="5"></textarea>
+            </div>
+            <button type="submit" name="button" class="btn btn-primary">Publish</button>
+        </form>
+    </div>
+
+    <!-- footer component -->
+    <%- include("partials/footer"); -%>
