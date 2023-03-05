@@ -3,14 +3,16 @@ import React from "react";
 function Navbar() {
   return (
     <div className="navbar-container">
-      <div className="navbar-logo">Ronald Gustavo To Do List</div>
+      <div className="navbar-logo">
+        <a href="/">Ronald Gustavo To Do List</a>
+      </div>
       <div className="navbar-menu">
         <ul className="navbar-item">
           <li className="navbar-link">
-            <a href="../App.js">Home</a>
+            <a href="/">Home</a>
           </li>
           <li className="navbar-link">
-            <a href="Adddata.js">Add</a>
+            <a href="#addData">Add</a>
           </li>
         </ul>
       </div>
