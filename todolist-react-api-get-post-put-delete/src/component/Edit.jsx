@@ -12,6 +12,8 @@ function Edit() {
   const navigate = useNavigate();
 
   const currenDate = new Date().toLocaleString();
+
+  // get data untuk ditampilin di form update
   useEffect(() => {
     let urlAPI =
       "https://64043c8b3bdc59fa8f34a799.mockapi.io/todolist/" + dataid;
@@ -24,7 +26,7 @@ function Edit() {
         setName(res.name);
         setActivity(res.activity);
         setDescription(res.description);
-        // console.log(res);
+        console.log(res);
       })
       .catch((err) => {
         console.log(err.message);
@@ -33,7 +35,8 @@ function Edit() {
 
   let handleSubmit = async (e) => {
     e.preventDefault();
-    let urlAPI = "https://64043c8b3bdc59fa8f34a799.mockapi.io/todolist/" + id;
+    let urlAPI =
+      "https://64043c8b3bdc59fa8f34a799.mockapi.io/todolist/" + dataid;
     try {
       let res = await fetch(urlAPI, {
         method: "PUT",

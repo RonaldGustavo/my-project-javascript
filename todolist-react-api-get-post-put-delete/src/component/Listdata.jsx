@@ -4,13 +4,6 @@ import { useNavigate } from "react-router-dom";
 function Listdata() {
   const [dataItem, setDataItem] = useState([]);
 
-  const [id, setId] = useState(0);
-  const [name, setName] = useState("");
-  const [activity, setActivity] = useState("");
-  const [description, setDescription] = useState("");
-
-  const currenDate = new Date().toLocaleString();
-
   const navigate = useNavigate();
 
   let RemoveData = async (id) => {
@@ -25,31 +18,6 @@ function Listdata() {
         .catch((err) => {
           console.log(err.message);
         });
-    }
-  };
-
-  let handleSubmit = async (e) => {
-    e.preventDefault();
-    let urlAPI = "https://64043c8b3bdc59fa8f34a799.mockapi.io/todolist";
-    try {
-      let res = await fetch(urlAPI, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          name: name,
-          activity: activity,
-          description: description,
-          date: currenDate,
-        }),
-      });
-      let resJson = await res.json();
-      //menampilkan object data yang dipost
-      console.log(resJson);
-    } catch (err) {
-      console.log(err);
     }
   };
 
